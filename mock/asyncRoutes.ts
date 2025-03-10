@@ -55,6 +55,39 @@ const permissionRouter = {
   ]
 };
 
+const AboutRouter = {
+  path: "/admin",
+  meta: {
+    icon: "eos-icons:admin",
+    // showLink: false,
+    title: "系统管理",
+    rank: 20
+  },
+  children: [
+    {
+      path: "/admin/account",
+      name: "account",
+      meta: {
+        title: "账户管理"
+      }
+    },
+    {
+      path: "/admin/role",
+      name: "role",
+      meta: {
+        title: "角色管理"
+      }
+    },
+    {
+      path: "/admin/menu",
+      name: "menu",
+      meta: {
+        title: "菜单管理"
+      }
+    }
+  ]
+};
+
 export default defineFakeRoute([
   {
     url: "/get-async-routes",
@@ -62,7 +95,7 @@ export default defineFakeRoute([
     response: () => {
       return {
         success: true,
-        data: [permissionRouter]
+        data: [permissionRouter, AboutRouter]
       };
     }
   }
