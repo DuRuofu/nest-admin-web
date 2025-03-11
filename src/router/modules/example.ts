@@ -11,7 +11,7 @@ export default {
       name: "mqtt",
       component: () => import("@/views/example/mqtt/index.vue"),
       meta: {
-        title: "mqtt客户端"
+        title: "MQTT客户端"
       }
     },
     {
@@ -19,7 +19,7 @@ export default {
       name: "echarts",
       component: () => import("@/views/example/echarts/index.vue"),
       meta: {
-        title: "echarts图表"
+        title: "Echarts图表"
       }
     }
   ]

@@ -55,7 +55,7 @@ const permissionRouter = {
   ]
 };
 
-const AboutRouter = {
+const adminRouter = {
   path: "/admin",
   meta: {
     icon: "eos-icons:admin",
@@ -95,7 +95,7 @@ export default defineFakeRoute([
     response: () => {
       return {
         success: true,
-        data: [permissionRouter, AboutRouter]
+        data: [permissionRouter, adminRouter]
       };
     }
   }
